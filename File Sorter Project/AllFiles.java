@@ -32,26 +32,6 @@ public class AllFiles extends Functionality {
     return fileList;
   }
 
-  //what we're actually going to use to list all the files in the computer. ACTUAL PROGRAM. DO NOT TOUCH UNTIL CODE WORKS CORRECTLY ALL OTHER PLACES
-  // public static List<Path> listFiles() {
-
-  //   List<Path> fileList = new ArrayList<>();
-  //   Iterator<Path> iterator = Files.walk(Paths.get("C:\\")).iterator();
-
-  //   try(Stream<Path> stream = Files.walk(root)) {
-  //     for (Path entry : stream) {
-  //       if (Files.isRegularFile(entry)) {
-  //         fileList.add(entry);
-  //       }
-  //     }
-  //   }
-  //   catch (IOException e) {
-  //     System.out.println("Error listing files");
-  //   }
-
-  //   return fileList;
-  //}
-
 // public void sortAllFiles(){
 //   sortAllFilesByFileType();
 //   sortAllFilesByKeyword();

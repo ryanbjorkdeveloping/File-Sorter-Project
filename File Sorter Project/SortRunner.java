@@ -14,10 +14,10 @@ public class SortRunner extends Application
         Button btn = new Button("Sort Files Within Folder");
 
         btn.setOnAction(e -> {
-            Path imageFiles = Paths.get("D:\\File Sorter ProjectTesting Folder\\Images");
-            Path docFiles = Paths.get("D:\\File Sorter ProjectTesting Folder\\Documents");
-            Path musicFiles = Paths.get("D:\\File Sorter ProjectTesting Folder\\Music");
-            Path allFilesFolder = Paths.get("D:\\File Sorter ProjectTesting Folder\\Specific Files Folder");
+            Path imageFiles = Paths.get("C:\\Users\\ryanb\\OneDrive\\Pictures\\UnspecificedImages");
+            Path docFiles = Paths.get("C:\\Users\\ryanb\\OneDrive\\Documents\\UnspecifiedDocFiles");
+            Path musicFiles = Paths.get("C:\\Users\\ryanb\\OneDrive\\Music\\unspecifiedMusicFiles");
+            Path allFilesFolder = Paths.get("C:\\Users\\ryanb\\Downloads");
 
             AllFiles sortFolderFiles = new AllFiles(imageFiles, docFiles, musicFiles, allFilesFolder);
             sortFolderFiles.createDocTypeFolders();
@@ -40,4 +40,4 @@ public class SortRunner extends Application
         launch(args);
     }
 
-} 
+}
