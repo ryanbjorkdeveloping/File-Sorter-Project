@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build SortRunner",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "--module-path",
+                "${workspaceFolder}/lib",
+                "--add-modules",
+                "javafx.controls,javafx.fxml",
+                "-d",
+                "${workspaceFolder}/build",
+                "${workspaceFolder}/Functionality.java",
+                "${workspaceFolder}/AllFiles.java",
+                "${workspaceFolder}/SortRunner.java"
+            ],
+            "problemMatcher": "$javac",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
